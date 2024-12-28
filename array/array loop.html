@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array of student objects
+const students = [
+    { name: "Ali", age: 20, grade: 90 },
+    { name: "Bilal", age: 22, grade: 78 },
+    { name: "Laiba", age: 19, grade: 85 },
+    { name: "Dania", age: 21, grade: 88 },
+    { name: "Mohsin", age: 23, grade: 72 }
+];
 
+// Function to get students with grade 85 or higher
+function getTopStudents(students) {
+    return students.filter(student => student.grade >= 85);
+}
+
+// Function to calculate the average grade of all students
+function averageGrade(students) {
+    const totalGrade = students.reduce((sum, student) => sum + student.grade, 0);
+    return totalGrade / students.length;
+}
+
+// Test the functions
+const topStudents = getTopStudents(students);
+const avgGrade = averageGrade(students);
+
+console.log("Top Students:", topStudents);
+console.log("Average Grade:", avgGrade);
+
+    </script>
+</body>
+</html>
