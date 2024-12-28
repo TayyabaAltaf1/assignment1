@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Grading System
 
+// Prompt user to enter the student's score
+const score = parseFloat(prompt("Enter the student's score (0-100):"));
+
+if (isNaN(score) || score < 0 || score > 100) {
+    console.log("Please enter a valid score between 0 and 100.");
+} else {
+    let grade;
+
+    // Determine the grade using if-else statements
+    if (score >= 90) {
+        grade = "A";
+    } else if (score >= 80) {
+        grade = "B";
+    } else if (score >= 70) {
+        grade = "C";
+    } else if (score >= 60) {
+        grade = "D";
+    } else {
+        grade = "F";
+    }
+
+    // Display personalized message based on the grade using switch
+    switch (grade) {
+        case "A":
+            console.log("Great job for an A!");
+            break;
+        case "B":
+            console.log("Well done for a B!");
+            break;
+        case "C":
+            console.log("Good effort for a C!");
+            break;
+        case "D":
+            console.log("You passed with a D. Keep improving!");
+            break;
+        case "F":
+            console.log("Unfortunately, you got an F. Better luck next time!");
+            break;
+        default:
+            console.log("Unexpected error.");
+    }
+}
+
+    </script>
+</body>
+</html>
