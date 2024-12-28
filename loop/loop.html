@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Sum of multiples of 3 and 5 below 100
+let sum = 0;
 
+// Iterate from 1 to 99
+for (let i = 1; i < 100; i++) {
+    // Check if divisible by 3 or 5
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum += i;
+    }
+}
+
+// Print the result
+console.log("Sum of multiples of 3 and 5 below 100:", sum);
+
+// Bonus: Function to calculate sum with a user-provided upper limit
+function sumOfMultiples(upperLimit) {
+    let total = 0;
+    for (let i = 1; i < upperLimit; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            total += i;
+        }
+    }
+    return total;
+}
+
+// Example of using the function with user input
+const upperLimit = parseInt(prompt("Enter an upper limit:"), 10);
+if (!isNaN(upperLimit) && upperLimit > 0) {
+    console.log(`Sum of multiples of 3 and 5 below ${upperLimit}:`, sumOfMultiples(upperLimit));
+} else {
+    console.log("Please enter a valid positive number.");
+}
+    </script>
+</body>
+</html>
