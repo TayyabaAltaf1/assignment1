@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Book {
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.available = true;
+  }
 
+  // Method to borrow the book
+  borrowBook() {
+    if (this.available) {
+      this.available = false;
+      console.log(`You have borrowed "${this.title}".`);
+    } else {
+      console.log(`"${this.title}" is currently unavailable.`);
+    }
+  }
+
+  // Method to return the book
+  returnBook() {
+    if (!this.available) {
+      this.available = true;
+      console.log(`You have returned "${this.title}".`);
+    } else {
+      console.log(`"${this.title}" was not borrowed.`);
+    }
+  }
+
+  // Method to print book details
+  printDetails() {
+    console.log(`Title: ${this.title}`);
+    console.log(`Author: ${this.author}`);
+    console.log(`Year: ${this.year}`);
+    console.log(`Available: ${this.available ? "Yes" : "No"}`);
+  }
+}
+
+// Example usage
+const book1 = new Book("MR.chips", "James Hilton", 1934);
+
+// Print details before borrowing
+book1.printDetails();
+
+// Borrow the book
+book1.borrowBook();
+
+// Print details after borrowing
+book1.printDetails();
+
+// Return the book
+book1.returnBook();
+
+// Print details after returning
+book1.printDetails();
+    </script>
+</body>
+</html>
