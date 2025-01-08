@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Checker with Theme Toggle</title>
+  </head>
+  <body>
+    <h1>Toggle Theme</h1>
+    <p>Current Theme <span id="theme-display">Light</span></p>
+    <button id="theme-btn">Click me</button>
+    <!-- linking js file-->
+
+    <h1>welcome to weather forcasting system!</h1>
+
+    <form onsubmit="getWeatherDetails(); return false;">
+      <div>
+        <label for="city">Enter City Name:</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+      <button type="submit">Get</button>
+    </form>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
