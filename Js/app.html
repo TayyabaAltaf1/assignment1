@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+        <h1>Weather App</h1>
+        <form onsubmit="getWeatherDetails(); return false;">
+            <div>
+                <label for="city">Enter city:</label>
+                <input type="text" id="city" name="city" required />
+            </div>
+              <br />
+              <button type="submit">Submit</button>  
+        </form>
+        <div id="weather"></div>
+
+        <form onsubmit="getWeatherDetails(); return false;">
+            <div>
+                <label for="city">wind:</label>
+                <input type="text" id="city" name="city" required />
+            </div>
+              <br />
+              <button type="submit">Submit</button>  
+        </form>
+        <div id="wind"></div>
+
+        <form onsubmit="getWeatherDetails(); return false;">
+            <div>
+                <label for="city"> humidity :</label>
+                <input type="text" id="city" name="city" required />
+            </div>
+              <br />
+              <button type="submit">Submit</button>  
+        </form>
+<div id="humidy"></div>
+
+<form onsubmit="getWeatherDetails(); return false;">
+    <div>
+        <label for="city"> Fahrenheit :</label>
+        <input type="text" id="city" name="city" required />
+    </div>
+      <br />
+      <button type="submit">Submit</button>  
+</form>
+<div id="Fahrenheit"></div>
+
+<form onsubmit="getWeatherDetails(); return false;">
+    <div>
+        <label for="city"> is sunny :</label>
+        <input type="text" id="city" name="city" required />
+    </div>
+      <br />
+      <button type="submit">Submit</button>  
+</form>
+<div id="issunny"></div>
+
+
+        <script src="./app.js"></script> 
+
+        
+</body>
+</html>
+
