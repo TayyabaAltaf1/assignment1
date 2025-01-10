@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm System</title>
+    <style>
+       h1.heading {
+        color: green;
+      }
+     div.heading {
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+    <h1>Alarm System</h1>
+    <form onsubmit="checkAlarm(); return false;">
+    <label for="door">Door Open:</label>
+    <input type="checkbox" id="door"><br><br>
+    <label for="window">Window Open:</label>
+    <input type="checkbox" id="window"><br><br>
+    <button id="checkAlarmButton">Check Alarm</button>
+</form>
+    <p id="alarmStatus"></p>
+
+    <script src="./alarms.js"></script>
+</body>
+</html>
+        
