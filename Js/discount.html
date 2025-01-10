@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Eligibility</title>
+    <style>
+        
+      h1.heading {
+        color: green;
+      }
+     div.heading {
+        color: blue;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Discount Eligibility</h1>
+    <form onsubmit="checkDiscountEligibility(); return false;">
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="0"><br><br>
+     <label for="membership">Premium Membership:</label> 
+    <input type="checkbox" id="membership"><br><br>
+    <button id="checkEligibilityButton">Check Eligibility</button>
+</form>
+    <p id="resultMessage"></p>
+
+    
+    <script src="./discount.js"></script>
+</body>
+</html>
