@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+    <style>
+        h1.heading {
+          color: purple;
+        }
+        div.heading {
+          color: blue;
+        }
+        
+      </style>
+    </style>
+</head>
+<body>
+    <h1>Login Validation</h1>
+    <form onsubmit="validdatelogin(); return false;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="validateLogin()">Log In</button>
+    </form>
+    <p id="message"></p>
+<script src="./login.js"></script> 
+</body>
+</html>
