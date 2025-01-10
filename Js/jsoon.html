@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Parser Example</title>
+</head>
+<body>
+    <h1>JSON Parser</h1>
+
+    <p>Enter a JSON string:</p>
+    <form onsubmit="parseJSON(); return false;">
+    <input type="text" id="jsonString" placeholder='{"key": "value"}'>
+    <button onclick="parseJSON()">Parse JSON</button>
+
+    <p id="result"></p>
+    <script src="./jsoon.js"></script>
+    </body>
+    </html>
