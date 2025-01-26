@@ -1,0 +1,33 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: rotating 1s forwards 0s infinite;
+}
+
+
+.container{
+    display: flex;
+    height: 100px;
+}
+
+@keyframes color_change{
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: blueviolet;
+    }
+}
+
+
+@keyframes rotating {
+    from{
+        rotate : 0deg;
+    }
+    to{
+        rotate: 90deg;
+    }
+}
+
+
