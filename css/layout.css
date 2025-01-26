@@ -1,0 +1,50 @@
+.body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 142, 215);
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
+}
+
+.box {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.box-sidebar {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.box-navbar {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box-Main-content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box-Footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        background-color: yellow;
+    }
+}
+
