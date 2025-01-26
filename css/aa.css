@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .btn {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(102, 146, 148);
+    position: relative;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(120, 235, 197, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  .btn:hover::after{
+    width: 100%;
+  }
+  
+  
+  /* Pseudo Elements */
+  p::after {
+    content: "This is a ";
+  }
+  
+  .p2p_link::after {
+    content: " Click";
+  }
