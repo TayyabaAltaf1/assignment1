@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query: Orientation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        /* Default styling for portrait orientation */
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Landscape-specific styling */
+        @media (orientation: landscape) {
+            p {
+                font-size: 24px;
+                color: #3498db;
+                text-align: left;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+
+            img {
+                max-width: 70%;
+            }
+        }
+
+        /* Portrait-specific styling */
+        @media (orientation: portrait) {
+            p {
+                font-size: 18px;
+                color: #e74c3c;
+                text-align: center;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Responsive Design with Media Queries</h2>
+
+    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" alt="Placeholder Image">
+
+    <p>This text will change color, size, and position depending on the screen orientation.</p>
+
+</body>
+</html>
+
