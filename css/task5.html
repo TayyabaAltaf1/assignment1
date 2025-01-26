@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: auto;
+            text-align: justify;
+        }
+
+        /* Styling the first line */
+        p::first-line {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        /* Styling the first letter */
+        p::first-letter {
+            font-size: 40px;
+            color: #e74c3c;
+            font-weight: bold;
+            float: left;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pseudo-Elements: First Line & First Letter</h2>
+
+    <p>
+        Once upon a time in a distant kingdom, there was a brave warrior who sought adventure beyond the towering mountains. 
+        The journey was treacherous, filled with unexpected challenges and encounters with mystical creatures. 
+        Through courage and wisdom, the warrior discovered secrets long forgotten, shaping the destiny of the land forever.
+    </p>
+
+</body>
+</html>
+
