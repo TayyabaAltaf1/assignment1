@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo-Classes Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        /* Not visited links */
+        a:link {
+            color: blue;
+        }
+
+        /* Visited links */
+        a:visited {
+            color: purple;
+        }
+
+        /* Active (clicked) links */
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Link Pseudo-Classes Example</h2>
+
+    <p><a href="https://www.example.com" target="_blank">Go to Example.com</a></p>
+    <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
+    <p><a href="https://www.wikipedia.org" target="_blank">Check Wikipedia</a></p>
+
+</body>
+</html>
