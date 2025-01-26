@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Pseudo-Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .decorative-box {
+            display: inline-block;
+            padding: 20px;
+            font-size: 18px;
+            background-color: #f0f0f0;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        /* Adding content before the div */
+        .decorative-box::before {
+            content: "< ";
+            color: #f39c12;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Adding content after the div */
+        .decorative-box::after {
+            content: " >";
+            color: #e74c3c;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pseudo-Elements: Before & After</h2>
+
+    <div class="decorative-box">
+        This is a decorative content box.
+    </div>
+
+</body>
+</html>
+
